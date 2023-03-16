@@ -10,4 +10,7 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/estilos.css" />
+  <% for (let arquivoCss of css ){ %>
+      <link rel="stylesheet" href="css/<%= arquivoCss %>" />
+  <% } %>
 </head>
