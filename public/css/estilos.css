@@ -1,0 +1,71 @@
+:root{
+    --cor-principal: #1E1E1E;
+    --cor-cinza-claro: #E5E5E5;
+    --font-titulo:'Comfortaa', cursive;
+    --font-texto:'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--cor-principal);
+}
+
+h1, h2{
+    font-family: var(--font-titulo);
+    color: #ffffff;
+}
+
+p{
+    font-family: var(--font-texto) ;
+}
+
+.container{
+    width: 70%;
+    margin: 50px auto;
+}
+
+.container main{
+    margin-top: 60px;
+}
+
+.container .livros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    flex-wrap: nowrap;
+}
+
+.container .livros .livro h3{
+    font-size: 18px;
+    color: var(--cor-principal);
+    font-family: var(--font-texto);
+}
+
+.container .livros .livro{
+    background-color: var(--cor-cinza-claro);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.container .livros .livro a{
+    background-color: var(--cor-principal);
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--font-texto);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container .livros .livro a:hover{
+    opacity: 0.8;
+}
+
+
+@media(max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+}
