@@ -1,0 +1,45 @@
+.form-container form{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 60px auto;
+    flex-wrap: wrap;
+}
+
+.campo{
+    width: 100%;
+    font-family: var(--font-texto);
+}
+
+.campo + .campo{
+    margin-top: 30px;
+}
+
+
+.campo input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+    background-color: var(--cor-cinza-claro);
+}
+
+.campo label{
+    color: var(--cor-cinza-claro);
+}
+
+.botoes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.botoes-container >  form{
+    display: inline;
+    width: auto;
+    margin: 0;
+}

@@ -1,8 +1,13 @@
 :root{
     --cor-principal: #1E1E1E;
     --cor-cinza-claro: #E5E5E5;
+    --cor-vermelho: #A80909;
     --font-titulo:'Comfortaa', cursive;
     --font-texto:'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 body{
@@ -18,3 +23,39 @@ p{
     font-family: var(--font-texto) ;
 }
 
+.container{
+    width: 70%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.btn-primario, .btn-secundario{
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    font-family: var(--font-texto);
+    cursor: pointer;
+}
+
+.btn-primario:hover, .btn-secundario:hover{
+    opacity: 0.8;
+}
+
+.btn-primario{
+    background-color: var(--cor-cinza-claro);
+}
+
+.btn-secundario{
+    background-color: var(--cor-vermelho);
+    color: #fff;
+}
+
+.retorno{
+    color: #fff;
+    font-family: var(--font-texto);
+}
+
+.retorno:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head', {titulo: 'Home', css: ['addLivro.css']}) %>
+<body>
+    <div class="container">
+        <h1>Livraria Crud</h1>
+        <h2>Cadastrar novo livro</h2>
+        <a href="/" class="retorno">Voltar para livros</a>
+
+        <main class="form-container" id="form-livro">
+            <form action="#">
+                <div class="campo">
+                    <label for="nome">Nome do livro</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o nome do livro">
+                </div>
+                <div class="campo">
+                    <label for="lancamento">Data de lançamento</label>
+                    <input type="text" name="lancamento" id="lancamento" placeholder="Digite a data de lançamento">
+                </div>
+                <div class="campo">
+                    <label for="editora">Editora</label>
+                    <input type="text" name="editora" id="editora" placeholder="Digite a editora">
+                </div>
+
+                <div class="campo">
+                    <label for="estoque">Estoque</label>
+                    <input type="number" name="estoque" id="estoque" placeholder="Digite o estoque">
+                </div>
+            </form>
+
+            <div class="botoes-container">
+                <button type="submit" class="btn-primario" form="form-livro">cadastrar livro</button>
+            </div>
+        </main>
+        
+    </div>
+</body>
+</html>
