@@ -21,6 +21,24 @@ p{
 .container{
     width: 70%;
     margin: 50px auto;
+    position: relative;
+}
+
+.btn-cadastro{
+    position: absolute;
+    right: 0;
+    top:0;
+    display: inline-block;
+    color: var(--cor-principal);
+    padding: 10px;
+    background-color: var(--cor-cinza-claro);
+    font-family: var(--font-texto);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-cadastro:hover{
+    opacity: 0.8;
 }
 
 .container main{
