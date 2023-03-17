@@ -8,45 +8,17 @@
         <a href="/livros/criar" class="btn-cadastro">Cadastrar Livro</a>
 
         <main class="livros">
-            <div class="livro">
-                <h3>Livro: Harry Potter e a Pedra Filosofal</h3>
-                <p>Ano de lançamento: 1998</p>
-                <p>Editora: DH</p>
-                <p>Estoque: 12</p>
-                <a href="/livros/editar">Editar</a>
-            </div>
+            <% for(let livro of livros){ %>
+                <div class="livro">
+                    <h3><%= livro.nome %></h3>
+                    <p>Ano de lançamento: <%= livro.ano %></p>
+                    <p>Editora: <%= livro.editora %></p>
+                    <p>Estoque: <%= livro.estoque %></p>
+                    <a href="/livros/editar">Editar</a>
+                </div>
+            <% } %>
 
-            <div class="livro">
-                <h3>Livro: Harry Potter e a Pedra Filosofal</h3>
-                <p>Ano de lançamento: 1998</p>
-                <p>Editora: DH</p>
-                <p>Estoque: 12</p>
-                <a href="/livros/editar">Editar</a>
-            </div>
-
-            <div class="livro">
-                <h3>Livro: Harry Potter e a Pedra Filosofal</h3>
-                <p>Ano de lançamento: 1998</p>
-                <p>Editora: DH</p>
-                <p>Estoque: 12</p>
-                <a href="/livros/editar">Editar</a>
-            </div>
-
-            <div class="livro">
-                <h3>Livro: Harry Potter e a Pedra Filosofal</h3>
-                <p>Ano de lançamento: 1998</p>
-                <p>Editora: DH</p>
-                <p>Estoque: 12</p>
-                <a href="/livros/editar">Editar</a>
-            </div>
-
-            <div class="livro">
-                <h3>Livro: Harry Potter e a Pedra Filosofal</h3>
-                <p>Ano de lançamento: 1998</p>
-                <p>Editora: DH</p>
-                <p>Estoque: 12</p>
-                <a href="/livros/editar">Editar</a>
-            </div>
+            
         </main>
         
     </div>
