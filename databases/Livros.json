@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "nome": "Harry Potter e Pedra Filosofal",
+        "ano": 1985,
+        "editora": "DH",
+        "estoque": 10
+    }
+]
