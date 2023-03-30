@@ -5,6 +5,9 @@ const geralController = {
         const livros = livrosServices.listarTodosLivros();
 
         res.render("home", {livros})
+    },
+    showFormAdd: (req, res) => {
+        res.render("addLivro")
     }
 }
 
